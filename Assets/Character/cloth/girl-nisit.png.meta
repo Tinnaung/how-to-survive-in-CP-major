@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      girl-nisit_0: 8821983859271494428
+      girl-nisit_1: -953472141537976169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

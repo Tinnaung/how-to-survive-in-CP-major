@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: d1419bfd533e54db7bf15757f6e454bc
+guid: d74023a17c7a64545a4de49e7831670e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -507730805829082370
-    second: ponytail_0
+      213: 4068947828914544659
+    second: do-merit_0
+  - first:
+      213: 2661341271012159979
+    second: do-merit_1
+  - first:
+      213: -7918966032727715258
+    second: do-merit_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ponytail_0
+      name: do-merit_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 253
-        width: 222
-        height: 318
+        x: 2
+        y: 62
+        width: 58
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef2e80da58d24f8f0800000000000000
-      internalID: -507730805829082370
+      spriteID: 3106c000e7ec77830800000000000000
+      internalID: 4068947828914544659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do-merit_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 124
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be134cc19cbfee420800000000000000
+      internalID: 2661341271012159979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do-merit_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 32
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64251e6895e2a1290800000000000000
+      internalID: -7918966032727715258
       vertices: []
       indices: 
       edges: []
@@ -147,8 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ponytail_0: -507730805829082370
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

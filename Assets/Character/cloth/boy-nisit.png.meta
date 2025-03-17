@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boy-nisit_0: 2248212625142068970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

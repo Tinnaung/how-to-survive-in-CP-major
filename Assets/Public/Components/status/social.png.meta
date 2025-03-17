@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d1419bfd533e54db7bf15757f6e454bc
+guid: 86b997a3f33164c0d86c2e3c97400acb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -507730805829082370
-    second: ponytail_0
+      213: -1071225007087195327
+    second: social_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ponytail_0
+      name: social_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 253
-        width: 222
-        height: 318
+        x: 2
+        y: 1
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef2e80da58d24f8f0800000000000000
-      internalID: -507730805829082370
+      spriteID: 14b6d0a188e3221f0800000000000000
+      internalID: -1071225007087195327
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ponytail_0: -507730805829082370
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

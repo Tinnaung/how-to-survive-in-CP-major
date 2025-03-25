@@ -23,7 +23,7 @@ public class ActionScript : MonoBehaviour
 
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+        logic = GameObject.FindGameObjectWithTag("MainGameLogic").GetComponent<LogicScript>();
         logic.OnStatusChanged += UpdateActionStates;
 
         actions = mapCanvas.GetComponentsInChildren<Button>();

@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 157492772}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: Logic
+  m_TagString: MainGameLogic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

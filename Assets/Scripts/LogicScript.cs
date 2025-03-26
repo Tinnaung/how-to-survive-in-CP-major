@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LogicScript : MonoBehaviour
@@ -126,7 +127,17 @@ public class LogicScript : MonoBehaviour
         IncreaseSocial(stateData.Social);
         OnStatusChanged?.Invoke();
 
+        CheckGameOver();
         if (time <= 0) {EndSplit();}
+    }
+
+    private void CheckGameOver()
+    {
+        if (health <= 0 || happiness <= 0 || grade <= 0 || social <= 0)
+        {
+            Debug.Log("Game Over! Transitioning to Result Scene...");
+            SceneManager.LoadScene("Result");
+        }
     }
 }
 

@@ -3234,16 +3234,16 @@ MonoBehaviour:
   grade: 0
   happiness: 0
   social: 0
-  nameText: {fileID: 0}
+  nameText: {fileID: 1721947714}
   timeText: {fileID: 1939615849}
-  moneyText: {fileID: 0}
-  healthText: {fileID: 0}
-  gradeText: {fileID: 0}
-  happinessText: {fileID: 0}
-  socialText: {fileID: 0}
-  splitText: {fileID: 0}
-  currentYearText: {fileID: 0}
-  currentSemesterText: {fileID: 0}
+  moneyText: {fileID: 1971247749}
+  healthText: {fileID: 1016695564}
+  gradeText: {fileID: 1698241576}
+  happinessText: {fileID: 1308012671}
+  socialText: {fileID: 379582074}
+  splitText: {fileID: 427790667}
+  currentYearText: {fileID: 1897516339}
+  currentSemesterText: {fileID: 2138047613}
 --- !u!4 &1331999847
 Transform:
   m_ObjectHideFlags: 0

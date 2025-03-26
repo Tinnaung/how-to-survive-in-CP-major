@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
@@ -8,18 +9,18 @@ public class ActionScript : MonoBehaviour
     public Transform mapCanvas; 
 
     private Button[] actions;  
-    private ActionData[] actionDataList =
-        {
-            new(grade: 10, time: -2),               // Learn
-            new(grade: 5, time: -1, money: -50),    // Do Merit
-            new(health: 10, time: -2),             // Sleep
-            new(health: 12, time: -2, money: -100), // Exercise
-            new(social: 12, time: -2, money: -100), // Hangout
-            new(happiness: 5, time: -1, money: -50), // Game
-            new(happiness: 10, time: -2, money: -100), // Movie
-            new() // Other (default)
-        };
-    private readonly string[] actionNames = { "Learn", "Do Merit", "Sleep", "Exercise", "Hangout", "Game", "Movie", "Other" };
+    private Dictionary<string, ActionData> actionDataMap = new()
+    {
+        { "learn", new ActionData(health: -10, grade: 10, time: -2) },
+        { "do-merit", new ActionData(grade: 5, time: -1, money: -50) },
+        { "sleep", new ActionData(health: 10, time: -2) },
+        { "exercise", new ActionData(health: 12, time: -2, money: -100) },
+        { "hang-out", new ActionData(social: 12, time: -2, money: -100) },
+        { "game", new ActionData(happiness: 5, time: -1, money: -50) },
+        { "movie", new ActionData(happiness: 10, time: -2, money: -100) },
+        { "other", new ActionData() } // Default action
+    };
+    // private readonly string[] actionNames = { "Learn", "Do Merit", "Sleep", "Exercise", "Hangout", "Game", "Movie", "Other" };
 
     void Start()
     {
@@ -29,12 +30,18 @@ public class ActionScript : MonoBehaviour
         actions = mapCanvas.GetComponentsInChildren<Button>();
         actions = actions.OrderBy(b => b.transform.GetSiblingIndex()).ToArray();
 
-        for (int i = 0; i < actions.Length; i++)
+         foreach (var button in actions)
         {
-            int index = i;
-
-            actions[i].gameObject.name = actionNames[index];
-            actions[i].onClick.AddListener(() => ApplyAction(actionNames[index], actionDataList[index]));
+            string actionName = button.gameObject.name; // Use button name as key
+            Debug.Log($"Button Clicked: {actionName}");
+            if (actionDataMap.ContainsKey(actionName))
+            {
+                button.onClick.AddListener(() => ApplyAction(actionName, actionDataMap[actionName]));
+            }
+            else
+            {
+                Debug.LogWarning($"No action found for button: {actionName}");
+            }
         }
     }
 
@@ -51,15 +58,21 @@ public class ActionScript : MonoBehaviour
             Happiness = action.Happiness,
             Social = action.Social,
         };
+         Debug.Log($"Current State - Money: {stateData.Money}, Time: {stateData.Time}, " +
+                  $"Health: {stateData.Health}, Grade: {stateData.Grade}, " +
+                  $"Happiness: {stateData.Happiness}, Social: {stateData.Social}");
         logic.SetCurrentStatus(stateData);
     }
 
     private void UpdateActionStates()
     {
-        for (int i = 0; i < actions.Length; i++)
+        foreach (var button in actions)
         {
-            bool canPerformAction = CanPerformAction(actionDataList[i]);
-            actions[i].interactable = canPerformAction;
+            string actionName = button.gameObject.name;
+            if (actionDataMap.ContainsKey(actionName))
+            {
+                button.interactable = CanPerformAction(actionDataMap[actionName]);
+            }
         }
     }
 
@@ -68,11 +81,15 @@ public class ActionScript : MonoBehaviour
         CurrentStateData currentState = logic.GetCurrentStatus();
 
         return currentState.Money + action.Money >= 0  
-            && currentState.Time + action.Time >= 0
-            && currentState.Health + action.Health >= 0 
-            && currentState.Grade + action.Grade >= 0
-            && currentState.Social + action.Social >= 0
-            && currentState.Happiness + action.Happiness >= 0;
+            && currentState.Time + action.Time >= 0;
+    }
+
+    private void LogCurrentState()
+    {
+        CurrentStateData currentState = logic.GetCurrentStatus();
+        Debug.Log($"Current State - Money: {currentState.Money}, Time: {currentState.Time}, " +
+                  $"Health: {currentState.Health}, Grade: {currentState.Grade}, " +
+                  $"Happiness: {currentState.Happiness}, Social: {currentState.Social}");
     }
 }
 
@@ -88,5 +105,17 @@ public struct ActionData
         Social = social;
         Money = money;
         Time = time;
+    }
+}
+
+public struct NamedActionData
+{
+    public string Name;
+    public ActionData Action;
+
+    public NamedActionData(string name, ActionData action)
+    {
+        Name = name;
+        Action = action;
     }
 }

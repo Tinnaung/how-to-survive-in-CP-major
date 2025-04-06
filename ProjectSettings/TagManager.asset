@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Logic
   - MainGameLogic
+  - CostPanel
   layers:
   - Default
   - TransparentFX

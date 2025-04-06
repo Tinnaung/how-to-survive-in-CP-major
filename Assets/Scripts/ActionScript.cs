@@ -48,17 +48,20 @@ public class ActionScript : MonoBehaviour
     private void ApplyAction(string actionName, ActionData action)
     {
         Debug.Log($"Button Clicked: {actionName}"); // TODO: change to success modal
+        
+        CurrentStateData currentState = logic.GetCurrentStatus();
 
         var stateData = new CurrentStateData 
         {
-            Money = action.Money,
-            Time = action.Time,
-            Grade = action.Grade,
-            Health = action.Health,
-            Happiness = action.Happiness,
-            Social = action.Social,
+            Money = currentState.Money + action.Money,
+            Time = currentState.Time + action.Time,
+            Grade = Mathf.Min(currentState.Grade + action.Grade, 100),
+            Health = Mathf.Min(currentState.Health + action.Health, 100),
+            Happiness = Mathf.Min(currentState.Happiness + action.Happiness, 100),
+            Social = Mathf.Min(currentState.Social + action.Social, 100),
         };
-         Debug.Log($"Current State - Money: {stateData.Money}, Time: {stateData.Time}, " +
+
+        Debug.Log($"Current State - Money: {stateData.Money}, Time: {stateData.Time}, " +
                   $"Health: {stateData.Health}, Grade: {stateData.Grade}, " +
                   $"Happiness: {stateData.Happiness}, Social: {stateData.Social}");
         logic.SetCurrentStatus(stateData);

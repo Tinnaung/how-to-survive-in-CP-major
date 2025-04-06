@@ -69,16 +69,16 @@ public class LogicScript : MonoBehaviour
 
     private void ModifyStat(ref int stat, int amount, Text statText)
     {
-        stat += amount;
+        stat = amount;
         statText.text = stat.ToString();
     }
 
-    private void IncreaseTime(int amount) => ModifyStat(ref time, amount, timeText);
-    private void IncreaseMoney(int amount) => ModifyStat(ref money, amount, moneyText);
-    private void IncreaseHealth(int amount) => ModifyStat(ref health, amount, healthText);
-    private void IncreaseGrade(int amount) => ModifyStat(ref grade, amount, gradeText);
-    private void IncreaseHappiness(int amount) => ModifyStat(ref happiness, amount, happinessText);
-    private void IncreaseSocial(int amount) => ModifyStat(ref social, amount, socialText);
+    private void SetTime(int amount) => ModifyStat(ref time, amount, timeText);
+    private void SetMoney(int amount) => ModifyStat(ref money, amount, moneyText);
+    private void SetHealth(int amount) => ModifyStat(ref health, amount, healthText);
+    private void SetGrade(int amount) => ModifyStat(ref grade, amount, gradeText);
+    private void SetHappiness(int amount) => ModifyStat(ref happiness, amount, happinessText);
+    private void SetSocial(int amount) => ModifyStat(ref social, amount, socialText);
 
     [ContextMenu("End Split")]
     public void EndSplit()
@@ -92,9 +92,8 @@ public class LogicScript : MonoBehaviour
             if (currentSemester == 2) currentYear++;
             currentSemester = (currentSemester % 2) + 1;
             split = "Midterm";
-            IncreaseMoney(roundMoney);
+            money += roundMoney;
         }
-
         time = roundTime;
         UpdateUI();
         OnStatusChanged?.Invoke();
@@ -119,12 +118,13 @@ public class LogicScript : MonoBehaviour
 
     public void SetCurrentStatus(CurrentStateData stateData)
     {
-        IncreaseMoney(stateData.Money);
-        IncreaseTime(stateData.Time);
-        IncreaseHealth(stateData.Health);
-        IncreaseGrade(stateData.Grade);
-        IncreaseHappiness(stateData.Happiness);
-        IncreaseSocial(stateData.Social);
+        SetMoney(stateData.Money);
+        SetTime(stateData.Time);
+        SetHealth(stateData.Health);
+        SetGrade(stateData.Grade);
+        SetHappiness(stateData.Happiness);
+        SetSocial(stateData.Social);
+        UpdateUI();
         OnStatusChanged?.Invoke();
 
         CheckGameOver();

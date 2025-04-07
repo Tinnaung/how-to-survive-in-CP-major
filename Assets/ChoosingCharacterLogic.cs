@@ -1,8 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ChoosingCharacterLogic : MonoBehaviour
 {
+    public string characterName;
+    public TMP_InputField characterInput;
 
     public int currentClothIndex = 0;
     public int currentPetIndex = 0;
@@ -19,6 +22,9 @@ public class ChoosingCharacterLogic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        characterInput.onValueChanged.AddListener(UpdateCharacterName);
+
         ChangeCloth(currentClothIndex);
         ChangePet(currentPetIndex);
         ChangeHair(currentHairIndex);
@@ -37,6 +43,10 @@ public class ChoosingCharacterLogic : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void UpdateCharacterName(string input) {
+        characterName = input;
     }
 
     private void ChangePet(int index) {

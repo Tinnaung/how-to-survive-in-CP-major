@@ -29,13 +29,13 @@ public class LogicScript : MonoBehaviour
     public Text nameText;
     public Text timeText;
     public Text moneyText;
-    public Text healthText;
-    public Text gradeText;
-    public Text happinessText;
-    public Text socialText;
     public Text splitText;
     public Text currentYearText;
     public Text currentSemesterText;
+    public StatusBarAndScore healthBar;
+    public StatusBarAndScore gradeBar;
+    public StatusBarAndScore happinessBar;
+    public StatusBarAndScore socialBar;
 
     public void Start()
     {
@@ -50,6 +50,7 @@ public class LogicScript : MonoBehaviour
         split = "Midterm";
         currentYear = 1;
         currentSemester = 1;
+        healthBar.Initialize(100);
         UpdateUI();
     }
 
@@ -61,24 +62,24 @@ public class LogicScript : MonoBehaviour
         currentSemesterText.text = currentSemester.ToString();
         timeText.text = time.ToString();
         moneyText.text = money.ToString();
-        healthText.text = health.ToString();
-        gradeText.text = grade.ToString();
-        happinessText.text = happiness.ToString();
-        socialText.text = social.ToString();
+
+        healthBar.SetScore(health);
+        gradeBar.SetScore(grade);
+        happinessBar.SetScore(happiness);
+        socialBar.SetScore(social);
     }
 
-    private void ModifyStat(ref int stat, int amount, Text statText)
+    private void ModifyStat(ref int stat, int amount)
     {
         stat = amount;
-        statText.text = stat.ToString();
     }
 
-    private void SetTime(int amount) => ModifyStat(ref time, amount, timeText);
-    private void SetMoney(int amount) => ModifyStat(ref money, amount, moneyText);
-    private void SetHealth(int amount) => ModifyStat(ref health, amount, healthText);
-    private void SetGrade(int amount) => ModifyStat(ref grade, amount, gradeText);
-    private void SetHappiness(int amount) => ModifyStat(ref happiness, amount, happinessText);
-    private void SetSocial(int amount) => ModifyStat(ref social, amount, socialText);
+    private void SetTime(int amount) => ModifyStat(ref time, amount);
+    private void SetMoney(int amount) => ModifyStat(ref money, amount);
+    private void SetHealth(int amount) => ModifyStat(ref health, amount);
+    private void SetGrade(int amount) => ModifyStat(ref grade, amount);
+    private void SetHappiness(int amount) => ModifyStat(ref happiness, amount);
+    private void SetSocial(int amount) => ModifyStat(ref social, amount);
 
     [ContextMenu("End Split")]
     public void EndSplit()

@@ -36,6 +36,7 @@ public class LogicScript : MonoBehaviour
     public StatusBarAndScore gradeBar;
     public StatusBarAndScore happinessBar;
     public StatusBarAndScore socialBar;
+    public Modal modal;
 
     public void Start()
     {
@@ -137,11 +138,32 @@ public class LogicScript : MonoBehaviour
 
     private void CheckGameOver()
     {
-        if (health <= 0 || happiness <= 0 || grade <= 0 || social <= 0)
+        if (health <= 0)
         {
-            Debug.Log("Game Over! Transitioning to Result Scene...");
-            SceneManager.LoadScene("Result");
+            Debug.Log("Game Over! Health is 0 or less. Transitioning to Result Scene...");
+            modal.OpenBadEndModal("health");
         }
+        else if (happiness <= 0)
+        {
+            Debug.Log("Game Over! Happiness is 0 or less. Transitioning to Result Scene...");
+            modal.OpenBadEndModal("happiness");
+        }
+        else if (grade <= 0)
+        {
+            Debug.Log("Game Over! Grade is 0 or less. Transitioning to Result Scene...");
+            modal.OpenBadEndModal("grade");
+        }
+        else if (social <= 0)
+        {
+            Debug.Log("Game Over! Social is 0 or less. Transitioning to Result Scene...");
+            modal.OpenBadEndModal("social");
+        }
+    }
+
+
+    public void RestartGame()
+    {
+        InitializeGame();
     }
 }
 

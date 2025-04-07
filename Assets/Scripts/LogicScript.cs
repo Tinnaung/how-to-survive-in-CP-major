@@ -51,6 +51,9 @@ public class LogicScript : MonoBehaviour
         currentYear = 1;
         currentSemester = 1;
         healthBar.Initialize(100);
+        gradeBar.Initialize(100);
+        happinessBar.Initialize(100);
+        socialBar.Initialize(100);
         UpdateUI();
     }
 

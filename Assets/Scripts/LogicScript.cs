@@ -101,6 +101,7 @@ public class LogicScript : MonoBehaviour
         }
         time = roundTime;
         UpdateUI();
+        modal.OpenEventModal();
         OnStatusChanged?.Invoke();
     }
 

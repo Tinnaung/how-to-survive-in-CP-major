@@ -15,6 +15,7 @@ public class BadEndModal : MonoBehaviour
     private void OnQuit()
     {
         _modalManager.CloseModal();
+        NewMonoBehaviourScript.QuitGame();
     }
 
     private void OnRestart()

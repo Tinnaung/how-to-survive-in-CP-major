@@ -7,7 +7,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    public void QuitGame() {
+    public static void QuitGame() {
         #if UNITY_EDITOR            // When the application is running in the Unity Editor
             UnityEditor.EditorApplication.isPlaying = false;
         #else                       // when application is built

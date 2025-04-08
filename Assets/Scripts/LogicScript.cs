@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class LogicScript : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class LogicScript : MonoBehaviour
     public int grade;
     public int happiness;
     public int social;
+    public int allRemainingTime;
 
     [Header("UI Elements")]
     public Text nameText;
@@ -99,8 +101,14 @@ public class LogicScript : MonoBehaviour
             split = "Midterm";
             money += roundMoney;
         }
+        allRemainingTime += time;
         time = roundTime;
         UpdateUI();
+        if (currentYear > 1)
+        {
+            EndGame();
+            return;
+        }
         modal.OpenEventModal();
         OnStatusChanged?.Invoke();
     }
@@ -160,6 +168,43 @@ public class LogicScript : MonoBehaviour
             modal.OpenBadEndModal("social");
         }
     }
+
+    private void EndGame()
+    {
+        List<ReceivedBadge> receivedBadges = new List<ReceivedBadge>();
+        string goodBadgeType = "good";
+        string badBadgeType = "bad";
+
+        var badgeConditions = new List<(string statName, int value, string badgeType, bool condition)>
+        {
+            ("health", health,  goodBadgeType, health   >= 90),
+            ("happiness", happiness, goodBadgeType, happiness >= 90),
+            ("grade", grade,    goodBadgeType, grade    >= 90),
+            ("social", social,  goodBadgeType, social   >= 90),
+            ("money", money,    goodBadgeType, money    >= 2000),
+            ("time",  allRemainingTime,     goodBadgeType, allRemainingTime     <= 10),
+
+            ("health", health,  badBadgeType, health    <= 10),
+            ("happiness", happiness, badBadgeType, happiness <= 10),
+            ("grade", grade,    badBadgeType, grade     <= 10),
+            ("social", social,  badBadgeType, social    <= 10),
+            ("money", money,    badBadgeType, money     <= 200),
+            ("time",  allRemainingTime,     badBadgeType, allRemainingTime      >= 50),
+        };
+
+        foreach (var (statName, _, badgeType, condition) in badgeConditions)
+        {
+            if (condition)
+            {
+                Debug.Log($"Congratulations! You got the {badgeType} {statName} badge");
+                receivedBadges.Add(new ReceivedBadge(badgeType, statName));
+            }
+        }
+
+        modal.OpenDisplayBadgeModal(receivedBadges, playerName);
+    }
+
+
 
 
     public void RestartGame()

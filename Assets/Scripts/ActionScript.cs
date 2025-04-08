@@ -74,15 +74,19 @@ public class ActionScript : MonoBehaviour
             string actionName = button.gameObject.name;
             if (actionDataMap.ContainsKey(actionName))
             {
-                button.interactable = CanPerformAction(actionDataMap[actionName]);
+                var isDisabled = !CanPerformAction(actionName, actionDataMap[actionName]);
+                button.interactable = !isDisabled;
+                button.image.color = isDisabled ? Color.gray : Color.white;
             }
         }
     }
 
-    private bool CanPerformAction(ActionData action)
+    private bool CanPerformAction(string actionName, ActionData action)
     {
         CurrentStateData currentState = logic.GetCurrentStatus();
 
+        if (actionName == "sleep" || actionName == "learn") {return true;}
+    
         return currentState.Money + action.Money >= 0  
             && currentState.Time + action.Time >= 0;
     }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BadEndModal : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class BadEndModal : MonoBehaviour
     {
         _logicScript.RestartGame();
         _modalManager.CloseModal();
+        SceneManager.LoadScene("ChoosingCharacter");
     }
 
     public void OpenBadEndModal(string type)

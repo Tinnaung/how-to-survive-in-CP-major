@@ -30,6 +30,7 @@ public class UseItemModal : MonoBehaviour
 
     private void OnCloseModal()
     {
+        gameObject.SetActive(false);
         _modalManager.CloseModal();
     }
 

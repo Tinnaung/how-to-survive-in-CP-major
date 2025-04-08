@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8c8fc4f62c6c4146bfef1e46a6beabc
+guid: 99a0282f9e887344e841e798d8b52eb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2248212625142068970
-    second: boy-nisit_0
+      213: -6642189541005656643
+    second: glasses_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boy-nisit_0
+      name: glasses_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 27
-        width: 382
-        height: 344
+        x: 166
+        y: 425
+        width: 135
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae634259871433f10800000000000000
-      internalID: 2248212625142068970
+      spriteID: dbdfa85edc332d3a0800000000000000
+      internalID: -6642189541005656643
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      boy-nisit_0: 2248212625142068970
+      glasses_0: -6642189541005656643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

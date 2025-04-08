@@ -8,6 +8,7 @@ public class Modal : MonoBehaviour, IPointerClickHandler
    private bool isCloseWhenClickOutside;
    public BadEndModal badEndModal;
    public EventScript eventModal;
+   public UseItemModal useItemModal;
 
    void Start()
    {
@@ -32,5 +33,11 @@ public class Modal : MonoBehaviour, IPointerClickHandler
    {
         eventModal.RandomEvent();
         gameObject.SetActive(true);
+   }
+
+   public void OpenUseItemModal()
+   {
+          useItemModal.OpenUseItemModal();
+          gameObject.SetActive(true);
    }
 }

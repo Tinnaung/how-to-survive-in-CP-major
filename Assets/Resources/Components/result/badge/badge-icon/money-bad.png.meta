@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6e5137316c6954ee9a68db04075bbf93
+guid: 24933ca86b87c42d180972fdbc7ab419
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8303574596601498020
-    second: grade-bad_0
+      213: -5737264070932924535
+    second: money-bad_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grade-bad_0
+      name: money-bad_0
       rect:
         serializedVersion: 2
-        x: 86
-        y: 61
-        width: 102
-        height: 147
+        x: 50
+        y: 54
+        width: 202
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a9c364f9193c3370800000000000000
-      internalID: 8303574596601498020
+      spriteID: 9877e6d89b42160b0800000000000000
+      internalID: -5737264070932924535
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grade-bad_0: 8303574596601498020
+      money-bad_0: -5737264070932924535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

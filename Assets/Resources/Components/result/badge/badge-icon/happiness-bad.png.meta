@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 18023474d165a454e8601b8d2c676de4
+guid: 0fe389b1cf2874a9fa70d136ade96c32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2891403575764923837
-    second: health-good_0
+      213: -6238266583868713188
+    second: happiness-bad_0
+  - first:
+      213: -6866648049355731420
+    second: happiness-bad_1
+  - first:
+      213: -6656043556432679324
+    second: happiness-bad_2
+  - first:
+      213: 3688724824738184424
+    second: happiness-bad_3
+  - first:
+      213: 3475719022638483858
+    second: happiness-bad_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: health-good_0
+      name: happiness-bad_0
       rect:
         serializedVersion: 2
-        x: 52
-        y: 60
-        width: 182
-        height: 164
+        x: 51
+        y: 173
+        width: 84
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34acc3464cbafd7d0800000000000000
-      internalID: -2891403575764923837
+      spriteID: c17d05ef7993d69a0800000000000000
+      internalID: -6238266583868713188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happiness-bad_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 173
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ec58ceaf3c4b0a0800000000000000
+      internalID: -6866648049355731420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happiness-bad_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 82
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e6d4196abf0a3a0800000000000000
+      internalID: -6656043556432679324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happiness-bad_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 81
+        width: 43
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec3fa43fabf03330800000000000000
+      internalID: 3688724824738184424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happiness-bad_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 93
+        width: 79
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2994f63390c3c3030800000000000000
+      internalID: 3475719022638483858
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      health-good_0: -2891403575764923837
+      happiness-bad_0: -6238266583868713188
+      happiness-bad_1: -6866648049355731420
+      happiness-bad_2: -6656043556432679324
+      happiness-bad_3: 3688724824738184424
+      happiness-bad_4: 3475719022638483858
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7f7b2139856054056a7967cb60674668
+guid: 2dae847f315024abcb37302d7ff3686d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -693423663705213810
-    second: social-good_0
+      213: -2476012791932974064
+    second: health-bad_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: social-good_0
+      name: health-bad_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 45
-        width: 159
-        height: 187
+        x: 73
+        y: 49
+        width: 138
+        height: 178
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e84300e0ad67066f0800000000000000
-      internalID: -693423663705213810
+      spriteID: 01c0385fb7f63add0800000000000000
+      internalID: -2476012791932974064
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      social-good_0: -693423663705213810
+      health-bad_0: -2476012791932974064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: a3f08798d065a44ae909f1038f0d0c78
+guid: 99f5a4ef8ba674c7e9bf0cf1f108639f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6606507479675702828
-    second: grade-good_0
-  - first:
-      213: 1904605801715252354
-    second: grade-good_1
+      213: -2891403575764923837
+    second: health-good_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grade-good_0
+      name: health-good_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 69
-        width: 98
-        height: 150
+        x: 52
+        y: 60
+        width: 182
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d1f7f33378f054a0800000000000000
-      internalID: -6606507479675702828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grade-good_1
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 135
-        width: 58
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28cb268b2e48e6a10800000000000000
-      internalID: 1904605801715252354
+      spriteID: 34acc3464cbafd7d0800000000000000
+      internalID: -2891403575764923837
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grade-good_0: -6606507479675702828
-      grade-good_1: 1904605801715252354
+      health-good_0: -2891403575764923837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

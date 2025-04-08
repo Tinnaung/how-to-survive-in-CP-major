@@ -4,6 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Logic
+  - MainGameLogic
+  - CostPanel
+  - UseItemImage
   - ChoosingCharacterLogic
   layers:
   - Default

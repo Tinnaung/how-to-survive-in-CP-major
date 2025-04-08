@@ -8,11 +8,12 @@ TagManager:
   - MainGameLogic
   - CostPanel
   - UseItemImage
+  - ChoosingCharacterLogic
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Logic
   - Water
   - UI
   - 

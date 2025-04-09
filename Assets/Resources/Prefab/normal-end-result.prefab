@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -295, y: 124}
+  m_AnchoredPosition: {x: -311, y: 124}
   m_SizeDelta: {x: -717, y: -320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8529547055003744920
@@ -489,6 +489,5 @@ MonoBehaviour:
   badgeIcon: {fileID: 5161409822834987492}
   badgeName: {fileID: 7131182232299488270}
   badgeOwner: {fileID: 514075113908396275}
-  _modalManager: {fileID: 0}
   parentToCheck: {fileID: 0}
   modalToToggle: {fileID: 0}

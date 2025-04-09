@@ -27,6 +27,16 @@ public class BadEndModal : MonoBehaviour
 
     public void OpenBadEndModal(string type)
     {
+        badEndDataMap = new Dictionary<string, BadEndData>
+        {
+            {"health", new BadEndData("ไม่น้า คุณตุยก่อนอายุ 30 ซะอีก", "health-badend")},
+            {"social", new BadEndData("สังคมไม่ต้อนรับคุณอีกต่อไป ฮือ ๆ", "social-badend")},
+            {"happiness", new BadEndData("นี่เราเป็นบ้าอะไรกันนี่", "happiness-badend")},
+            {"grade", new BadEndData("ดูทรงจะได้จบหลังแพทย์", "grade-badend")},
+        };
+        gameObject.SetActive(true);
+        Debug.Log(badEndDataMap[type]);
+
         if (badEndDataMap.ContainsKey(type))
         {
             var badEndData = badEndDataMap[type];

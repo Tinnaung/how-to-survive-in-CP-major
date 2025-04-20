@@ -9,7 +9,7 @@ public class LogicScript : MonoBehaviour
     public event System.Action OnStatusChanged;
 
     [Header("Game Settings")]
-    public string playerName = "บุ๊ค";
+    public string playerName = StaticData.Username;
     public int roundTime = 24;
     public int roundMoney = 1000;
     
@@ -62,7 +62,7 @@ public class LogicScript : MonoBehaviour
 
     private void UpdateUI()
     {
-        nameText.text = playerName;
+        nameText.text = StaticData.Username;
         splitText.text = split == "Midterm" ? "กลางภาค" : "ปลายภาค";
         currentYearText.text = currentYear.ToString();
         currentSemesterText.text = currentSemester.ToString();

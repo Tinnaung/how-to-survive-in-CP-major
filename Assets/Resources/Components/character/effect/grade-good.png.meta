@@ -1,46 +1,46 @@
 fileFormatVersion: 2
-guid: 81f6f77b414f448958194501e7bec1cf
+guid: effb81aebd57548739d831dc79f9e666
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2902259835964631615
-    second: smart_0
+      213: -6606507479675702828
+    second: grade-good_0
   - first:
-      213: 383661657344594760
-    second: smart_1
+      213: 1904605801715252354
+    second: grade-good_1
   - first:
-      213: -3814267570248957490
-    second: smart_2
+      213: -4725827271093656453
+    second: grade-good_2
   - first:
-      213: -715796937284129182
-    second: smart_3
+      213: 6373924634248372464
+    second: grade-good_3
   - first:
-      213: 636173755784488046
-    second: smart_4
+      213: -7684216276224039959
+    second: grade-good_4
   - first:
-      213: -7908917886314113195
-    second: smart_5
+      213: -4360828022634763622
+    second: grade-good_5
   - first:
-      213: 428578758361235215
-    second: smart_6
+      213: -2896295704836255743
+    second: grade-good_6
   - first:
-      213: 1806415229809322878
-    second: smart_7
+      213: 6274293542093344377
+    second: grade-good_7
   - first:
-      213: 8229770469558960773
-    second: smart_8
+      213: 7813266613265399281
+    second: grade-good_8
   - first:
-      213: -1132087239793614209
-    second: smart_9
+      213: 348661850713240056
+    second: grade-good_9
   - first:
-      213: 7879788590264556618
-    second: smart_10
+      213: 6660619145518797718
+    second: grade-good_10
   - first:
-      213: 3152708602677679254
-    second: smart_11
+      213: 6102772470437751608
+    second: grade-good_11
   - first:
-      213: -1491109088454128664
-    second: smart_12
+      213: 3107533963751016500
+    second: grade-good_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smart_0
+      name: grade-good_0
       rect:
         serializedVersion: 2
         x: 302
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c5d1775e0a19b7d0800000000000000
-      internalID: -2902259835964631615
+      spriteID: 4d1f7f33378f054a0800000000000000
+      internalID: -6606507479675702828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_1
+      name: grade-good_1
       rect:
         serializedVersion: 2
         x: 319
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84356ff9e3a035500800000000000000
-      internalID: 383661657344594760
+      spriteID: 28cb268b2e48e6a10800000000000000
+      internalID: 1904605801715252354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_2
+      name: grade-good_2
       rect:
         serializedVersion: 2
         x: 324
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec1c40d8adff01bc0800000000000000
-      internalID: -3814267570248957490
+      spriteID: b74eb9ca22d7a6eb0800000000000000
+      internalID: -4725827271093656453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_3
+      name: grade-good_3
       rect:
         serializedVersion: 2
         x: 356
@@ -230,14 +230,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26eeddd5a7af016f0800000000000000
-      internalID: -715796937284129182
+      spriteID: 0f06c713faab47850800000000000000
+      internalID: 6373924634248372464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_4
+      name: grade-good_4
       rect:
         serializedVersion: 2
         x: 380
@@ -252,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e64e5f809a424d800800000000000000
-      internalID: 636173755784488046
+      spriteID: 9e3246e620e2c5590800000000000000
+      internalID: -7684216276224039959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_5
+      name: grade-good_5
       rect:
         serializedVersion: 2
         x: 99
@@ -274,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 557938ce511ed3290800000000000000
-      internalID: -7908917886314113195
+      spriteID: a9a2940a40a3b73c0800000000000000
+      internalID: -4360828022634763622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_6
+      name: grade-good_6
       rect:
         serializedVersion: 2
         x: 382
@@ -296,14 +296,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0f366a2c1e92f500800000000000000
-      internalID: 428578758361235215
+      spriteID: 100deb4d66a4ec7d0800000000000000
+      internalID: -2896295704836255743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_7
+      name: grade-good_7
       rect:
         serializedVersion: 2
         x: 370
@@ -318,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7be3a9a41da11910800000000000000
-      internalID: 1806415229809322878
+      spriteID: 97e4001ebb4c21750800000000000000
+      internalID: 6274293542093344377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_8
+      name: grade-good_8
       rect:
         serializedVersion: 2
         x: 361
@@ -340,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 582cf0d83a4063270800000000000000
-      internalID: 8229770469558960773
+      spriteID: 1fd7a1b969c4e6c60800000000000000
+      internalID: 7813266613265399281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_9
+      name: grade-good_9
       rect:
         serializedVersion: 2
         x: 90
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f72695947a40a40f0800000000000000
-      internalID: -1132087239793614209
+      spriteID: 8f13e7e1b12b6d400800000000000000
+      internalID: 348661850713240056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_10
+      name: grade-good_10
       rect:
         serializedVersion: 2
         x: 359
@@ -384,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4c15e359f1aa5d60800000000000000
-      internalID: 7879788590264556618
+      spriteID: 69350d8c2d54f6c50800000000000000
+      internalID: 6660619145518797718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_11
+      name: grade-good_11
       rect:
         serializedVersion: 2
         x: 91
@@ -406,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 694dbe635cba0cb20800000000000000
-      internalID: 3152708602677679254
+      spriteID: 83ba97d5a3761b450800000000000000
+      internalID: 6102772470437751608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smart_12
+      name: grade-good_12
       rect:
         serializedVersion: 2
         x: 346
@@ -428,8 +428,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ebc55d2f248e4be0800000000000000
-      internalID: -1491109088454128664
+      spriteID: 43847d4fcad202b20800000000000000
+      internalID: 3107533963751016500
       vertices: []
       indices: 
       edges: []
@@ -448,19 +448,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      smart_0: -2902259835964631615
-      smart_1: 383661657344594760
-      smart_10: 7879788590264556618
-      smart_11: 3152708602677679254
-      smart_12: -1491109088454128664
-      smart_2: -3814267570248957490
-      smart_3: -715796937284129182
-      smart_4: 636173755784488046
-      smart_5: -7908917886314113195
-      smart_6: 428578758361235215
-      smart_7: 1806415229809322878
-      smart_8: 8229770469558960773
-      smart_9: -1132087239793614209
+      grade-good_0: -6606507479675702828
+      grade-good_1: 1904605801715252354
+      grade-good_10: 6660619145518797718
+      grade-good_11: 6102772470437751608
+      grade-good_12: 3107533963751016500
+      grade-good_2: -4725827271093656453
+      grade-good_3: 6373924634248372464
+      grade-good_4: -7684216276224039959
+      grade-good_5: -4360828022634763622
+      grade-good_6: -2896295704836255743
+      grade-good_7: 6274293542093344377
+      grade-good_8: 7813266613265399281
+      grade-good_9: 348661850713240056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

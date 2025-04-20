@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: d4f06391685d545a9aa64dd7abc946ba
+guid: bb6ba9d15f8ce49f6ae78c8a6c7cd81a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -408371497607106314
-    second: popular_0
+      213: 3961588006808174251
+    second: social-bad_0
   - first:
-      213: -7019773638138189892
-    second: popular_1
+      213: -1268321282548960764
+    second: social-bad_1
+  - first:
+      213: -3361607657350887373
+    second: social-bad_2
+  - first:
+      213: 8261130808018782488
+    second: social-bad_3
+  - first:
+      213: 3518054917918264096
+    second: social-bad_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: popular_0
+      name: social-bad_0
       rect:
         serializedVersion: 2
-        x: 151
-        y: 192
-        width: 71
-        height: 185
+        x: 110
+        y: 378
+        width: 67
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f0fbbc594c255af0800000000000000
-      internalID: -408371497607106314
+      spriteID: baebf348d436af630800000000000000
+      internalID: 3961588006808174251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: popular_1
+      name: social-bad_1
       rect:
         serializedVersion: 2
-        x: 226
-        y: 196
-        width: 75
-        height: 173
+        x: 186
+        y: 408
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +162,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb72f178111c49e90800000000000000
-      internalID: -7019773638138189892
+      spriteID: 402f99c6384066ee0800000000000000
+      internalID: -1268321282548960764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: social-bad_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 428
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3380e5d65ab2951d0800000000000000
+      internalID: -3361607657350887373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: social-bad_3
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 409
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819cef653be65a270800000000000000
+      internalID: 8261130808018782488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: social-bad_4
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 385
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b85d2fe44a2d030800000000000000
+      internalID: 3518054917918264096
       vertices: []
       indices: 
       edges: []
@@ -173,8 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      popular_0: -408371497607106314
-      popular_1: -7019773638138189892
+      social-bad_0: 3961588006808174251
+      social-bad_1: -1268321282548960764
+      social-bad_2: -3361607657350887373
+      social-bad_3: 8261130808018782488
+      social-bad_4: 3518054917918264096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

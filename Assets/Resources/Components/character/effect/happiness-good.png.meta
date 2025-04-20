@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: c4d12f3f9b9084e76b8f6814d5739b06
+guid: da8be3069c1a045a4be6c93ab9dc97af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1890251170005885824
-    second: stupid_0
+      213: -2563342577617654806
+    second: happiness-good_0
   - first:
-      213: -7156854318849780789
-    second: stupid_1
+      213: -8613888685332855272
+    second: happiness-good_1
+  - first:
+      213: -1328435128626030824
+    second: happiness-good_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stupid_0
+      name: happiness-good_0
       rect:
         serializedVersion: 2
-        x: 131
-        y: 487
-        width: 52
-        height: 110
+        x: 75
+        y: 452
+        width: 44
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 083a7749c658b3a10800000000000000
-      internalID: 1890251170005885824
+      spriteID: aeb277fb18d2d6cd0800000000000000
+      internalID: -2563342577617654806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stupid_1
+      name: happiness-good_1
       rect:
         serializedVersion: 2
-        x: 274
-        y: 490
-        width: 53
-        height: 108
+        x: 166
+        y: 412
+        width: 131
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +156,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc31db76aeebdac90800000000000000
-      internalID: -7156854318849780789
+      spriteID: 8168af701e1557880800000000000000
+      internalID: -8613888685332855272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happiness-good_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 378
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8175813f943709de0800000000000000
+      internalID: -1328435128626030824
       vertices: []
       indices: 
       edges: []
@@ -173,8 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stupid_0: 1890251170005885824
-      stupid_1: -7156854318849780789
+      happiness-good_0: -2563342577617654806
+      happiness-good_1: -8613888685332855272
+      happiness-good_2: -1328435128626030824
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

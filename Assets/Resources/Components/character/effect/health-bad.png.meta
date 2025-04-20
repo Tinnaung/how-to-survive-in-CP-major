@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 5e9af79a29b1e45f18e344f389c6ecb6
+guid: c8ae6b8d634e84aa09504b09fa137900
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3269139164971756641
-    second: lonely_0
+      213: -2476012791932974064
+    second: health-bad_0
   - first:
-      213: 8092961647773180708
-    second: lonely_1
+      213: 3037053643374894979
+    second: health-bad_1
   - first:
-      213: -7636491782027530368
-    second: lonely_2
+      213: 2532403368212005384
+    second: health-bad_2
   - first:
-      213: 1559200976549688934
-    second: lonely_3
-  - first:
-      213: -8880681922040015928
-    second: lonely_4
+      213: -4236134946033759040
+    second: health-bad_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lonely_0
+      name: health-bad_0
       rect:
         serializedVersion: 2
-        x: 110
-        y: 378
-        width: 67
-        height: 72
+        x: 188
+        y: 429
+        width: 28
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,42 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16c6579ffb05e5d20800000000000000
-      internalID: 3269139164971756641
+      spriteID: 01c0385fb7f63add0800000000000000
+      internalID: -2476012791932974064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonely_1
+      name: health-bad_1
       rect:
         serializedVersion: 2
-        x: 186
-        y: 408
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42361648db9ff4070800000000000000
-      internalID: 8092961647773180708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lonely_2
-      rect:
-        serializedVersion: 2
-        x: 216
+        x: 244
         y: 428
-        width: 31
-        height: 17
+        width: 29
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,42 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08f2f022f2bb50690800000000000000
-      internalID: -7636491782027530368
+      spriteID: 38f9a299238c52a20800000000000000
+      internalID: 3037053643374894979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonely_3
+      name: health-bad_2
       rect:
         serializedVersion: 2
-        x: 262
-        y: 409
-        width: 24
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 666bfa4f60563a510800000000000000
-      internalID: 1559200976549688934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lonely_4
-      rect:
-        serializedVersion: 2
-        x: 287
+        x: 160
         y: 385
-        width: 74
-        height: 64
+        width: 31
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +181,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c3529108da71c480800000000000000
-      internalID: -8880681922040015928
+      spriteID: 80287463277e42320800000000000000
+      internalID: 2532403368212005384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-bad_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 385
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc0a09e5b93635c0800000000000000
+      internalID: -4236134946033759040
       vertices: []
       indices: 
       edges: []
@@ -248,11 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lonely_0: 3269139164971756641
-      lonely_1: 8092961647773180708
-      lonely_2: -7636491782027530368
-      lonely_3: 1559200976549688934
-      lonely_4: -8880681922040015928
+      health-bad_0: -2476012791932974064
+      health-bad_1: 3037053643374894979
+      health-bad_2: 2532403368212005384
+      health-bad_3: -4236134946033759040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

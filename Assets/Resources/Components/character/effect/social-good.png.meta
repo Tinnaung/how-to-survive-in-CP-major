@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: eff5fd50bd88441b4b791f8762b01cd2
+guid: 08422f366c5d740bfb354ba579a988bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7023599962821960782
-    second: sick_0
+      213: -693423663705213810
+    second: social-good_0
   - first:
-      213: 6372938845354796963
-    second: sick_1
-  - first:
-      213: 2629214838360462455
-    second: sick_2
-  - first:
-      213: -5893886312657367874
-    second: sick_3
+      213: -2380159568667325006
+    second: social-good_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sick_0
+      name: social-good_0
       rect:
         serializedVersion: 2
-        x: 188
-        y: 429
-        width: 28
-        height: 16
+        x: 151
+        y: 192
+        width: 71
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bbdc83eb09278e90800000000000000
-      internalID: -7023599962821960782
+      spriteID: e84300e0ad67066f0800000000000000
+      internalID: -693423663705213810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sick_1
+      name: social-good_1
       rect:
         serializedVersion: 2
-        x: 244
-        y: 428
-        width: 29
-        height: 16
+        x: 226
+        y: 196
+        width: 75
+        height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,52 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a729a45d1a317850800000000000000
-      internalID: 6372938845354796963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sick_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 385
-        width: 31
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77459ae17f8dc7420800000000000000
-      internalID: 2629214838360462455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sick_3
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 385
-        width: 32
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebc458330a5b43ea0800000000000000
-      internalID: -5893886312657367874
+      spriteID: 2bd46d0ab79f7fed0800000000000000
+      internalID: -2380159568667325006
       vertices: []
       indices: 
       edges: []
@@ -223,10 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sick_0: -7023599962821960782
-      sick_1: 6372938845354796963
-      sick_2: 2629214838360462455
-      sick_3: -5893886312657367874
+      social-good_0: -693423663705213810
+      social-good_1: -2380159568667325006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

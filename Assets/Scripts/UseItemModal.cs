@@ -12,6 +12,7 @@ public class UseItemModal : MonoBehaviour
     private List<ExistingItemData> itemList = new() {};
     public Button backpackButton;
     public ModalManager _modalManager;
+    public ConfirmUseItemModal confirmUseItemModal;
 
     public void OpenUseItemModal()
     {
@@ -64,7 +65,10 @@ public class UseItemModal : MonoBehaviour
             };
             btn.spriteState = spriteState;
             btn.image.sprite = Resources.Load<Sprite>($"components/item/default/{itemList[index].ItemImageFile}");
-            btn.onClick.AddListener(() => ApplyItem(index));
+            btn.onClick.AddListener(() => 
+            {
+                confirmUseItemModal.OpenModal(index, ApplyItem, itemList[index].ItemName);
+            });
         }
         backpackButton.onClick.AddListener(() => OnCloseModal());
 

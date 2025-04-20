@@ -39,6 +39,7 @@ public class LogicScript : MonoBehaviour
     public StatusBarAndScore happinessBar;
     public StatusBarAndScore socialBar;
     public Modal modal;
+    public Button skipButton;
 
     public void Start()
     {
@@ -57,6 +58,7 @@ public class LogicScript : MonoBehaviour
         gradeBar.Initialize(100);
         happinessBar.Initialize(100);
         socialBar.Initialize(100);
+        skipButton.onClick.AddListener(() => SkipSplit());
         UpdateUI();
     }
 
@@ -104,7 +106,7 @@ public class LogicScript : MonoBehaviour
         allRemainingTime += time;
         time = roundTime;
         UpdateUI();
-        if (currentYear > 1)
+        if (currentYear > 4)
         {
             EndGame();
             return;
@@ -204,12 +206,14 @@ public class LogicScript : MonoBehaviour
         modal.OpenDisplayBadgeModal(receivedBadges, playerName);
     }
 
-
-
-
     public void RestartGame()
     {
         InitializeGame();
+    }
+
+    public void SkipSplit()
+    {
+        EndSplit();
     }
 }
 

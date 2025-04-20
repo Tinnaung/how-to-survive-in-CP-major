@@ -3913,6 +3913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710716473}
   - component: {fileID: 710716474}
+  - component: {fileID: 710716475}
   m_Layer: 5
   m_Name: character
   m_TagString: Untagged
@@ -3959,6 +3960,21 @@ MonoBehaviour:
   cloth: {fileID: 1577375763}
   hair: {fileID: 1892347244}
   pet: {fileID: 685879433}
+--- !u!114 &710716475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710716472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cae8af53ee14a539da63f8610e311e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logic: {fileID: 0}
+  effectPrefab: {fileID: 2191414108407315002, guid: c78d355cf14654c99b2b6d96b337e6ba, type: 3}
+  effectParent: {fileID: 710716473}
 --- !u!1 &711756496
 GameObject:
   m_ObjectHideFlags: 0

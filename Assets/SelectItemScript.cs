@@ -13,19 +13,19 @@ public class SelectItemScript : MonoBehaviour
     private const int maxSelections = 3;
     
     private Dictionary<string, Button> buttonLookup = new Dictionary<string, Button>();
-    private Dictionary<string, ItemData> itemDataMap = new Dictionary<string, ItemData>
+    private Dictionary<string, ItemBuff> itemDataMap = new Dictionary<string, ItemBuff>
     {
-        { "manga", new ItemData(happiness: 5) },
-        { "ps5", new ItemData(happiness: 12) },
-        { "food", new ItemData(happiness: 10) },
-        { "phone", new ItemData(social: 5) },
-        { "piggy-bank", new ItemData(time: -2, money: 500) },
-        { "textbook", new ItemData(grade: 12) },
-        { "motorcycle", new ItemData(time: 4) },
-        { "pill", new ItemData(health: 12) },
-        { "dumbell", new ItemData(health: 5) },
-        { "gift", new ItemData(social: 7) },
-        { "other", new ItemData() }
+        { "manga", new ItemBuff(happiness: 5) },
+        { "ps5", new ItemBuff(happiness: 12) },
+        { "food", new ItemBuff(happiness: 10) },
+        { "phone", new ItemBuff(social: 5) },
+        { "piggy-bank", new ItemBuff(time: -2, money: 500) },
+        { "textbook", new ItemBuff(grade: 12) },
+        { "motorcycle", new ItemBuff(time: 4) },
+        { "pill", new ItemBuff(health: 12) },
+        { "dumbell", new ItemBuff(health: 5) },
+        { "gift", new ItemBuff(social: 7) },
+        { "other", new ItemBuff() }
     };
 
     void Start()
@@ -102,6 +102,7 @@ public class SelectItemScript : MonoBehaviour
             }
         }
 
+        StaticData.SelectedItems = selectedItems;
         LogSelectedItems();
     }
 
@@ -166,9 +167,9 @@ public struct ItemData
 public struct NamedItemData
 {
     public string Name { get; }
-    public ItemData Item { get; }
+    public ItemBuff Item { get; }
 
-    public NamedItemData(string name, ItemData item)
+    public NamedItemData(string name, ItemBuff item)
     {
         Name = name;
         Item = item;

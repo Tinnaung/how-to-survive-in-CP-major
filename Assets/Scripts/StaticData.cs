@@ -1,11 +1,18 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class StaticData : MonoBehaviour
 {
     public static string Username;
     public static Character Character;
-}
+    public static List<NamedItemData> SelectedItems;
 
+    void Start()
+    {
+        SelectedItems = new();
+    }
+}
 
 public struct Character
 {

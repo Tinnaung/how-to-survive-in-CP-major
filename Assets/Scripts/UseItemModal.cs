@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,12 +9,7 @@ public class UseItemModal : MonoBehaviour
     public LogicScript logic;
     public Button[] itemButtons;
     public GameObject itemListPanel;
-    private List<ExistingItemData> itemList = new()
-    {
-        new ExistingItemData("ps5", false, "ps5", new ItemBuff(happiness: 12)),
-        new ExistingItemData("food", true, "food", new ItemBuff(health: 5, happiness: 10)),
-        new ExistingItemData("textbook", false, "textbook", new ItemBuff(happiness: 12)),
-    };
+    private List<ExistingItemData> itemList = new() {};
     public Button backpackButton;
     public ModalManager _modalManager;
 
@@ -21,6 +17,7 @@ public class UseItemModal : MonoBehaviour
     {
         for (int i = 0; i < itemButtons.Length; i++)
         {
+            if (i >= itemList.Count) {continue;}
             bool isUsed = itemList[i].IsUsed;
             itemButtons[i].interactable = !isUsed;
             itemButtons[i].image.color = isUsed ? Color.gray : Color.white;
@@ -38,7 +35,16 @@ public class UseItemModal : MonoBehaviour
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("MainGameLogic").GetComponent<LogicScript>();
-
+        if (StaticData.SelectedItems != null)
+        {
+            Debug.Log("Selected items: " + string.Join(", ", StaticData.SelectedItems.ConvertAll(i => i.Name)));
+            foreach (var selectedItem in StaticData.SelectedItems)
+            {
+            string itemName = selectedItem.Name;
+            itemList.Add(new ExistingItemData(itemName, false, itemName, selectedItem.Item)); 
+            }
+        }
+        
         itemButtons = itemListPanel.GetComponentsInChildren<Button>();
         itemButtons = itemButtons.OrderBy(b => b.transform.GetSiblingIndex()).ToArray();
 
@@ -46,6 +52,11 @@ public class UseItemModal : MonoBehaviour
         {
             int index = i;
             var btn = itemButtons[index];
+            if (index >= itemList.Count) {
+                btn.interactable = false;
+                btn.gameObject.SetActive(false);
+                continue;
+            }
             var spriteState = new SpriteState
             {
                 highlightedSprite = Resources.Load<Sprite>($"components/item/hover/{itemList[index].ItemImageFile}-hover"),

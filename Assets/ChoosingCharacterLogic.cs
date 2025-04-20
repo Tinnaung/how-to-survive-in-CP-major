@@ -47,6 +47,7 @@ public class ChoosingCharacterLogic : MonoBehaviour
 
     private void UpdateCharacterName(string input) {
         characterName = input;
+        StaticData.Username = input;
     }
 
     private void ChangePet(int index) {
@@ -56,6 +57,7 @@ public class ChoosingCharacterLogic : MonoBehaviour
         }
         pets[index].SetActive(true);
         currentPetIndex = index;
+        StaticData.Character.Pet = index;
     }
 
     private void ChangeCloth(int index) {
@@ -65,6 +67,7 @@ public class ChoosingCharacterLogic : MonoBehaviour
         }
         clothes[index].SetActive(true);
         currentClothIndex = index;
+        StaticData.Character.Cloth = index;
     }
 
     private void ChangeHair(int index) {
@@ -74,6 +77,7 @@ public class ChoosingCharacterLogic : MonoBehaviour
         }
         hairs[index].SetActive(true);
         currentHairIndex = index;
+        StaticData.Character.Hair = index;
     }
 
     public void HandleNextPet() { 

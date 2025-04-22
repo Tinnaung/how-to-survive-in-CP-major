@@ -40,6 +40,7 @@ public class LogicScript : MonoBehaviour
     public StatusBarAndScore socialBar;
     public Modal modal;
     public Button skipButton;
+    public SplitTransition splitTransition;
 
     public void Start()
     {
@@ -111,8 +112,13 @@ public class LogicScript : MonoBehaviour
             EndGame();
             return;
         }
-        modal.OpenEventModal();
-        OnStatusChanged?.Invoke();
+
+        splitTransition.PlaySplitTransition(currentYear, currentSemester, split, () =>
+        {
+            splitTransition.gameObject.SetActive(false);
+            modal.OpenEventModal();
+            OnStatusChanged?.Invoke(); 
+        });
     }
 
     public CurrentStateData GetCurrentStatus()

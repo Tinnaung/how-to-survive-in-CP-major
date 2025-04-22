@@ -14,7 +14,7 @@ public class CharacterEffect : MonoBehaviour
         logic = GameObject.FindGameObjectWithTag("MainGameLogic").GetComponent<LogicScript>();
         logic.OnStatusChanged += UpdateEffect;
 
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 
     public void UpdateEffect()

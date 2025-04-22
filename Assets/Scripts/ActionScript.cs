@@ -11,13 +11,13 @@ public class ActionScript : MonoBehaviour
     private Button[] actions;  
     private Dictionary<string, ActionData> actionDataMap = new()
     {
-        { "learn", new ActionData(health: -10, grade: 10, time: -2) },
-        { "do-merit", new ActionData(grade: 5, time: -1, money: -50) },
-        { "sleep", new ActionData(health: 10, time: -2) },
-        { "exercise", new ActionData(health: 12, time: -2, money: -100) },
-        { "hang-out", new ActionData(social: 12, time: -2, money: -100) },
-        { "game", new ActionData(happiness: 5, time: -1, money: -50) },
-        { "movie", new ActionData(happiness: 10, time: -2, money: -100) },
+        { "learn", new ActionData(health: -5, happiness: -4, grade: 5, social: -3, time: -3) },
+        { "do-merit", new ActionData(health: 0, happiness: 1, grade: 3, social: 0, time: -1, money: -50) },
+        { "sleep", new ActionData(health: 4, happiness: 3, grade: 0, social: -3, time: -2) },
+        { "exercise", new ActionData(health: 8, happiness: -2, grade: 0, social: 0, time: -2, money: -100) },
+        { "hang-out", new ActionData(health: -5, happiness: 4, grade: -3, social: 7, time: -2, money: -100) },
+        { "game", new ActionData(health: -3, happiness: 4, grade: -1, social: 0, time: -1, money: -50) },
+        { "movie", new ActionData(health: -2, happiness: 5, grade: -2, social: 0, time: -2, money: -100) },
         { "other", new ActionData() } // Default action
     };
     // private readonly string[] actionNames = { "Learn", "Do Merit", "Sleep", "Exercise", "Hangout", "Game", "Movie", "Other" };

@@ -107,7 +107,7 @@ public class LogicScript : MonoBehaviour
         allRemainingTime += time;
         time = roundTime;
         UpdateUI();
-        if (currentYear > 1)
+        if (currentYear > 4)
         {
             EndGame();
             return;

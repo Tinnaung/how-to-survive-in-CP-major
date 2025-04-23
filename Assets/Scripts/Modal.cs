@@ -36,6 +36,7 @@ public class Modal : MonoBehaviour, IPointerClickHandler
 
    public void OpenBadEndModal(string type)
    {
+        modalManager.gameObject.SetActive(true);
         gameObject.SetActive(true);
         badEndModal.gameObject.SetActive(true);
         badEndModal.OpenBadEndModal(type);
@@ -43,6 +44,7 @@ public class Modal : MonoBehaviour, IPointerClickHandler
 
    public void OpenEventModal()
    {
+        modalManager.gameObject.SetActive(true);
         gameObject.SetActive(true);
         eventModal.gameObject.SetActive(true);
         eventModal.RandomEvent();
@@ -50,6 +52,7 @@ public class Modal : MonoBehaviour, IPointerClickHandler
 
    public void OpenUseItemModal()
    {
+          modalManager.gameObject.SetActive(true);
           gameObject.SetActive(true);
           useItemModal.gameObject.SetActive(true);
           useItemModal.OpenUseItemModal();
@@ -57,6 +60,7 @@ public class Modal : MonoBehaviour, IPointerClickHandler
 
    public void OpenDisplayBadgeModal(List<ReceivedBadge> receivedBadges, string username)
    {
+          modalManager.gameObject.SetActive(true);
           gameObject.SetActive(true);
           badgeModal.gameObject.SetActive(true);
           badgeModal.OpenDisplayBadgeList(receivedBadges, username);
@@ -64,6 +68,7 @@ public class Modal : MonoBehaviour, IPointerClickHandler
 
    public void OpenEndGameModal()
    {
+         modalManager.gameObject.SetActive(true);
          gameObject.SetActive(true); 
          endGameModal.gameObject.SetActive(true);
          endGameModal.OpenEndGameModal();

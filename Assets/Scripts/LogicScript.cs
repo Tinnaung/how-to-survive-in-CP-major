@@ -107,7 +107,7 @@ public class LogicScript : MonoBehaviour
         allRemainingTime += time;
         time = roundTime;
         UpdateUI();
-        if (currentYear > 4)
+        if (currentYear > 1)
         {
             EndGame();
             return;
@@ -149,32 +149,37 @@ public class LogicScript : MonoBehaviour
         UpdateUI();
         OnStatusChanged?.Invoke();
 
-        CheckGameOver();
+        if(CheckGameOver()) {return;}
         if (time <= 0) {EndSplit();}
     }
 
-    private void CheckGameOver()
+    private bool CheckGameOver()
     {
         if (health <= 0)
         {
             Debug.Log("Game Over! Health is 0 or less. Transitioning to Result Scene...");
             modal.OpenBadEndModal("health");
+            return true;
         }
         else if (happiness <= 0)
         {
             Debug.Log("Game Over! Happiness is 0 or less. Transitioning to Result Scene...");
             modal.OpenBadEndModal("happiness");
+            return true;
         }
         else if (grade <= 0)
         {
             Debug.Log("Game Over! Grade is 0 or less. Transitioning to Result Scene...");
             modal.OpenBadEndModal("grade");
+            return true;
         }
         else if (social <= 0)
         {
             Debug.Log("Game Over! Social is 0 or less. Transitioning to Result Scene...");
             modal.OpenBadEndModal("social");
+            return true;
         }
+        return false;
     }
 
     private void EndGame()

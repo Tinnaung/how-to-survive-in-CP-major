@@ -16,6 +16,14 @@ public class Modal : MonoBehaviour, IPointerClickHandler
    void Start()
    {
         isCloseWhenClickOutside = false;
+        ResetModal();
+   }
+
+   public void ResetModal()
+   {
+     badEndModal.gameObject.SetActive(false);
+     eventModal.gameObject.SetActive(false);
+     useItemModal.gameObject.SetActive(false);
    }
 
    public void OnPointerClick(PointerEventData eventData)
@@ -28,31 +36,36 @@ public class Modal : MonoBehaviour, IPointerClickHandler
 
    public void OpenBadEndModal(string type)
    {
-        badEndModal.OpenBadEndModal(type);
         gameObject.SetActive(true);
+        badEndModal.gameObject.SetActive(true);
+        badEndModal.OpenBadEndModal(type);
    }
 
    public void OpenEventModal()
    {
-        eventModal.RandomEvent();
         gameObject.SetActive(true);
+        eventModal.gameObject.SetActive(true);
+        eventModal.RandomEvent();
    }
 
    public void OpenUseItemModal()
    {
-          useItemModal.OpenUseItemModal();
           gameObject.SetActive(true);
+          useItemModal.gameObject.SetActive(true);
+          useItemModal.OpenUseItemModal();
    }
 
    public void OpenDisplayBadgeModal(List<ReceivedBadge> receivedBadges, string username)
    {
-          badgeModal.OpenDisplayBadgeList(receivedBadges, username);
           gameObject.SetActive(true);
+          badgeModal.gameObject.SetActive(true);
+          badgeModal.OpenDisplayBadgeList(receivedBadges, username);
    }
 
    public void OpenEndGameModal()
    {
-         endGameModal.OpenEndGameModal();
          gameObject.SetActive(true); 
+         endGameModal.gameObject.SetActive(true);
+         endGameModal.OpenEndGameModal();
    }
 }

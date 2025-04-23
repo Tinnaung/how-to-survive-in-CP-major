@@ -30,7 +30,7 @@ public class EventScript : MonoBehaviour
           new EventData("eat-raw-pork", "eat-raw-pork", new EventCostData(health:  -10, time: -2)),
         };
 
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 
     public void RandomEvent()
@@ -47,6 +47,21 @@ public class EventScript : MonoBehaviour
         List<EventData> chosenEvents = new List<EventData>();
         List<int> usedIndices = new List<int>();
 
+        eventList = new List<EventData>()
+        {
+          new EventData("go-hospital", "go-hospital", new EventCostData(health:  8, time: -4)),
+          new EventData("do-project", "do-project", new EventCostData(health:  -5, happiness: -5)),
+          new EventData("pay-tuition", "pay-tuition", new EventCostData(money:  -200, time: -4)),
+          new EventData("do-part-time", "do-part-time", new EventCostData(money:  200, time: -8, happiness: -10)),
+          new EventData("face-pm", "face-pm", new EventCostData(health:  -5)),
+          new EventData("get-drunk", "get-drunk", new EventCostData(money:  -100, social: 15)),
+          new EventData("bet-football", "bet-football", new EventCostData(money:  -50, social: 10)),
+          new EventData("win-lottery", "win-lottery", new EventCostData(money:  500)),
+          new EventData("lost-lottery", "lost-lottery", new EventCostData(money:  -300)),
+          new EventData("found-summary", "found-summary", new EventCostData(grade:  10)),
+          new EventData("eat-raw-pork", "eat-raw-pork", new EventCostData(health:  -10, time: -2)),
+        };
+
         while (chosenEvents.Count < eventCount)
         {
             int index = Random.Range(0, eventList.Count);
@@ -57,7 +72,6 @@ public class EventScript : MonoBehaviour
             }
         }
         
-        _modalManager.gameObject.SetActive(true);
         gameObject.SetActive(true);
 
         for (int i = 0; i < chosenEvents.Count; i++)

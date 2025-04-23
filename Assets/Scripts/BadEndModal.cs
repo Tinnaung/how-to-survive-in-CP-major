@@ -34,7 +34,6 @@ public class BadEndModal : MonoBehaviour
             {"happiness", new BadEndData("นี่เราเป็นบ้าอะไรกันนี่", "happiness-badend")},
             {"grade", new BadEndData("ดูทรงจะได้จบหลังแพทย์", "grade-badend")},
         };
-        gameObject.SetActive(true);
         Debug.Log(badEndDataMap[type]);
 
         if (badEndDataMap.ContainsKey(type))
@@ -59,7 +58,7 @@ public class BadEndModal : MonoBehaviour
         quitButton.onClick.AddListener(() => OnQuit());
         restartButton.onClick.AddListener(() => OnRestart());
 
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 }
 

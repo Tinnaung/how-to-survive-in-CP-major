@@ -72,7 +72,7 @@ public class UseItemModal : MonoBehaviour
         }
         backpackButton.onClick.AddListener(() => OnCloseModal());
 
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 
     private void ApplyItem(int itemIndex)

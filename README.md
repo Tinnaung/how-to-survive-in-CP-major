@@ -1,9 +1,5 @@
 # how-to-survive-in-CP-major
 
-## Overview
-
-Brief description of the project, what it does, and its key features.
-
 ## Prerequisites
 
 - **Unity**

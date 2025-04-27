@@ -8,6 +8,9 @@ public class LogicScript : MonoBehaviour
 {
     public event System.Action OnStatusChanged;
 
+    [SerializeField]
+    public float randomEventPossibility = 0.1f;
+
     [Header("Game Settings")]
     public string playerName = StaticData.Username;
     public int roundTime = 24;
@@ -138,7 +141,7 @@ public class LogicScript : MonoBehaviour
         };
     }
 
-    public void SetCurrentStatus(CurrentStateData stateData)
+    public bool SetCurrentStatus(CurrentStateData stateData)
     {
         SetMoney(stateData.Money);
         SetTime(stateData.Time);
@@ -149,8 +152,13 @@ public class LogicScript : MonoBehaviour
         UpdateUI();
         OnStatusChanged?.Invoke();
 
-        if(CheckGameOver()) {return;}
-        if (time <= 0) {EndSplit();}
+        if(CheckGameOver()) {return true;}
+        if (time <= 0) {
+            EndSplit();
+            return true;
+        }
+
+        return false;
     }
 
     private bool CheckGameOver()
@@ -225,6 +233,19 @@ public class LogicScript : MonoBehaviour
     public void SkipSplit()
     {
         EndSplit();
+    }
+
+    public void RandomMiddleEvent()
+    {
+        var roll = UnityEngine.Random.value;
+        // Debug.Log(roll);
+        // Debug.Log(randomEventPossibility);
+        Debug.Log(roll <= randomEventPossibility);
+        if (roll <= randomEventPossibility)
+        {
+            modal.OpenEventModal();
+            OnStatusChanged?.Invoke();
+        }
     }
 }
 

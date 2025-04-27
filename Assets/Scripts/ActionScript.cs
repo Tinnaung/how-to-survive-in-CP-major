@@ -64,7 +64,10 @@ public class ActionScript : MonoBehaviour
         Debug.Log($"Current State - Money: {stateData.Money}, Time: {stateData.Time}, " +
                   $"Health: {stateData.Health}, Grade: {stateData.Grade}, " +
                   $"Happiness: {stateData.Happiness}, Social: {stateData.Social}");
-        logic.SetCurrentStatus(stateData);
+        if(!logic.SetCurrentStatus(stateData))
+        {
+            logic.RandomMiddleEvent();
+        }
     }
 
     private void UpdateActionStates()

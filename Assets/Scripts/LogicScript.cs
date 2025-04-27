@@ -240,7 +240,7 @@ public class LogicScript : MonoBehaviour
         var roll = UnityEngine.Random.value;
         // Debug.Log(roll);
         // Debug.Log(randomEventPossibility);
-        Debug.Log(roll <= randomEventPossibility);
+        // Debug.Log(roll <= randomEventPossibility);
         if (roll <= randomEventPossibility)
         {
             modal.OpenEventModal();
